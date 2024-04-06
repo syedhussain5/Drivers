@@ -2,6 +2,8 @@ import 'package:drivers/global/global.dart';
 import 'package:drivers/splashScreen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
+import '../tabPages/home_tab.dart';
+
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
@@ -38,7 +40,7 @@ class _MainScreenState extends State<MainScreen> with SingleTickerProviderStateM
         physics: NeverScrollableScrollPhysics(),
         controller: tabController,
         children: [
-          // HomeTabPage(),
+          HomeTabPage(),
           // EarningsTabPage(),
           // RatingsTabPage(),
           // ProfileTabPage(),
